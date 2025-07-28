@@ -32,6 +32,30 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+console.log(typeof heros);
 
-// https://262.ecma-international.org/5.1/#sec-11.4.3
+// https://262.ecma-international.org/5.1/#sec-11.4.3  
+
+
+//****************************************************************** */
+
+//stack(primative) and heap(non-primative)
+// here in stack it is used to store the value directly(gvie us copy ), while in heap it stores the reference(not give any copy) to the value
+let user= "nihar"
+let user2 = user;
+
+user2="priyanshu"
+
+console.log(user); // priyanshu
+console.log(user2); // nihar, remains unchanged
+
+
+myObj = {
+    name: "hitesh",
+    age: 22,
+}
+let myObj2 = myObj;
+
+myObj2.name = "priyanshu";
+console.log(myObj.name); // priyanshu
+console.log(myObj2.age); // priyanshu, changes reflected in both
