@@ -26,4 +26,15 @@ let state;
 // object
 
 console.log(typeof undefined); // undefined
-console.log(typeof null); // object
+console.log(typeof null); // object 
+
+//
+
+let user=["nihar", "hitesh", "priyanshu", "sahil"]
+
+console.log(user[0]); // nihar
+console.log(user[1]); // hitesh
+console.log(user[2]); // priyanshu
+console.log(user[3]); // sahil
+console.log(user[4]); // undefined, as there is no 5th element
+console.log(typeof user); // object
