@@ -10,8 +10,8 @@ const person={
     }
 } 
 
-console.log(person.fullname.firstname) // accessing nested object property;
-console.log(person["fullname"]["lastname"]) // accessing nested object property using bracket notation  
+// console.log(person.fullname.firstname) // accessing nested object property;
+// console.log(person["fullname"]["lastname"]) // accessing nested object property using bracket notation  
 
 const obj1={1: "one", 2: "two"}; // object with numeric keys
 const obj2={3: "uno", 4: "dos"}; // another object 
@@ -21,4 +21,17 @@ const obj2={3: "uno", 4: "dos"}; // another object
 // console.log(mergedObj);   
 
 const mergedObj={...obj1, ...obj2}; // using spread operator to merge objects
-console.log(mergedObj); // { '1': 'one', '2': 'two', '3': 'uno', '4': 'dos' }
+// console.log(mergedObj); // { '1': 'one', '2': 'two', '3': 'uno', '4': 'dos' }    
+
+
+//destructuring objects
+const nihar ={
+    name: "Nihar",
+    age: 30,
+    email: "hello@123" 
+} 
+
+const {name : n, age, email} = nihar; // destructuring object properties into variables
+console.log(n); // Nihar
+console.log(age); // 30
+console.log(email); // hello@123
