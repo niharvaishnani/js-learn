@@ -108,3 +108,48 @@ person.forEach((item) => {
     console.log(`${item.name} ni age ${item.age} che` );
 }); // Accessing the name property of each object in the array);
     
+//filter 
+
+const mynums =[1,2,3,4,5,6,7,8,9,10]
+const mynumber=mynums.filter( (nums)=>{
+   return nums>5
+})  
+console.log(mynumber);   
+
+//map
+const mynumber1=mynums
+               .map( (nums)=> nums*2 )
+               .map( (nums)=> nums+1 ) 
+               .filter( (nums)=> nums>10 )
+ console.log(mynumber1);  
+
+ //reduce
+ const mynumber3=mynums.reduce( (acc, curr)=>{
+    acc=acc+curr
+    return acc
+ },0)  
+ console.log(mynumber3);
+
+
+ const shoopingCart=[
+    {
+        productId:1,
+        productName:"mobile",
+        price:12000
+    },
+    {
+        productId:2,
+        productName:"laptop",
+        price:22000
+    },
+    {
+        productId:3,
+        productName:"tv",
+        price:32000
+    }
+ ] 
+
+ const total=shoopingCart.reduce( (acc,item,)=>(acc+item.price),0) 
+
+ console.log(total);
+ 
